@@ -1,3 +1,28 @@
 {
-    "name": "OneShot-AI"
+    "manifest_version": 3,
+    "name": "OneShot-AI",
+    "version": "0.1.0",
+    "description": "OneShot-AI is a extension to help you prompt different AI models with one prompt.",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://chat.openai.com/*", "https://claude.ai/*", "https://gemini.google.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+    
 }

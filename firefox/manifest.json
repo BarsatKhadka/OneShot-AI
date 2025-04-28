@@ -1,3 +1,10 @@
  {
-    "name": "OneShot-AI"
+    "manifest_version": 2,
+    "name": "OneShot-AI",
+    "version": "0.1.0",
+    "description": "OneShot-AI is a extension to help you prompt different AI models with one prompt.",
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
  }
