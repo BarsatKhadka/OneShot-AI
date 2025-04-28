@@ -5,7 +5,8 @@
     "description": "OneShot-AI is a extension to help you prompt different AI models with one prompt.",
     "permissions": [
         "storage",
-        "tabs"
+        "tabs",
+        "activeTab"
     ],
     "host_permissions": [
         "https://chat.openai.com/*",

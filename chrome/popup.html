@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OneShot-AI</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>OneShot-AI Prompt</h2>
+        <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+        <div class="buttons">
+            <button class="send-all" id="sendAll">Send to All</button>
+            <button class="platform-btn" id="sendOpenAI">ChatGPT</button>
+            <button class="platform-btn" id="sendClaude">Claude</button>
+            <button class="platform-btn" id="sendDeepseek">Deepseek</button>
+            <button class="platform-btn" id="sendGemini">Gemini</button>
+            <button class="clear" id="clearPrompt">Clear</button>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
