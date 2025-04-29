@@ -8,13 +8,33 @@
     <div class="container">
         <h2>OneShot-AI Prompt</h2>
         <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+        
+        <div class="platform-select">
+            <label class="checkbox-label">
+                <input type="checkbox" id="selectAll" checked>
+                Select All Platforms
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="platform" value="openai" checked>
+                ChatGPT
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="platform" value="claude" checked>
+                Claude
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="platform" value="deepseek" checked>
+                Deepseek
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="platform" value="gemini" checked>
+                Gemini
+            </label>
+        </div>
+
         <div class="buttons">
-            <button class="send-all" id="sendAll">Send to All</button>
-            <button class="platform-btn" id="sendOpenAI">ChatGPT</button>
-            <button class="platform-btn" id="sendClaude">Claude</button>
-            <button class="platform-btn" id="sendDeepseek">Deepseek</button>
-            <button class="platform-btn" id="sendGemini">Gemini</button>
-            <button class="clear" id="clearPrompt" onClick="clearTextBox">Clear</button>
+            <button class="send-btn" id="sendPrompt">Send Prompt</button>
+            <button class="clear" id="clearPrompt" onClick="clearTextBox()">Clear</button>
         </div>
         <div id="status"></div>
     </div>
